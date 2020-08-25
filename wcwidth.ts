@@ -29,7 +29,7 @@ export type Defaults = {
  *  This implementation assumes that characters are encoded in ISO 10646.
  */
 export function wcswidth(
-  str: any,
+  str: string,
   { nul = 0, control = 0 }: Defaults = {},
 ): number {
   const opts = { nul, control };
@@ -45,7 +45,7 @@ export function wcswidth(
   return s;
 }
 
-function wcwidth(ucs: any, { nul = 0, control = 0 }: Defaults = {}): number {
+function wcwidth(ucs: number, { nul = 0, control = 0 }: Defaults = {}): number {
   // test for 8-bit control characters
   if (ucs === 0) return nul;
   if (ucs < 32 || (ucs >= 0x7f && ucs < 0xa0)) return control;
@@ -74,7 +74,7 @@ function wcwidth(ucs: any, { nul = 0, control = 0 }: Defaults = {}): number {
   );
 }
 
-function bisearch(ucs: any): boolean {
+function bisearch(ucs: number): boolean {
   var min = 0;
   var max = combining.length - 1;
   var mid;
