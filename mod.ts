@@ -1,9 +1,8 @@
 import { showCursorSync } from "./tty_sync.ts";
 
-const mac =
-  (await Deno.permissions.query({ name: "env" })).state === "granted"
-    ? Deno.env.get("TERM_PROGRAM") === "Apple_Terminal"
-    : false;
+const mac = (await Deno.permissions.query({ name: "env" })).state === "granted"
+  ? Deno.env.get("TERM_PROGRAM") === "Apple_Terminal"
+  : false;
 
 export const ESC = "\u001B[";
 

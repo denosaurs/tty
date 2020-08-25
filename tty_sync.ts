@@ -34,7 +34,7 @@ export function restoreSync(writer: SyncStream = Deno.stdout): void {
 
 export function cursorSync(
   action: string,
-  writer: SyncStream = Deno.stdout
+  writer: SyncStream = Deno.stdout,
 ): void {
   writeSync(ESC + action, writer);
 }
@@ -114,7 +114,7 @@ export function goRightSync(x = 1, writer: SyncStream = Deno.stdout): void {
 export function goToSync(
   x: number,
   y: number,
-  writer: SyncStream = Deno.stdout
+  writer: SyncStream = Deno.stdout,
 ): void {
   writeSync(ESC + y + ";" + x + HOME, writer);
 }
