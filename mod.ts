@@ -39,3 +39,4 @@ export type AsyncStream = Deno.Writer;
 
 export * from "./tty_async.ts";
 export * from "./tty_sync.ts";
+export * from "./wcwidth.ts";
