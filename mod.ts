@@ -41,3 +41,4 @@ export * from "./tty_sync.ts";
 export * from "./wcwidth.ts";
 export * from "./ansi_regex.ts";
 export * from "./strip_ansi.ts";
+export * from "./is_interactive.ts";
