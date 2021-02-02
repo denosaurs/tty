@@ -2,8 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog], and this project adheres to
-[Semantic Versioning].
+The format is based on [Keep a Changelog],
+and this project adheres to [Semantic Versioning].
+
+## [0.1.2] - 2021-02-02
+
+### Features
+
+- fix linting errors ([`aaa6ba2`])
 
 ## [0.1.1] - 2020-11-21
 
@@ -33,6 +39,8 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
+[0.1.2]: https://github.com/denosaurs/tty/compare/0.1.1...0.1.2
+[`aaa6ba2`]: https://github.com/denosaurs/tty/commit/aaa6ba2e6793c667c917e07fe67c4c325bcb40bc
 [0.1.1]: https://github.com/denosaurs/tty/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/denosaurs/tty/compare/0.0.3...0.1.0
 [`0554bb7`]: https://github.com/denosaurs/tty/commit/0554bb7739d3de424bfaa5b793e002e8f72cf0d2
