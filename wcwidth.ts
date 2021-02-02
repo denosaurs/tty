@@ -35,9 +35,9 @@ export function wcswidth(
   const opts = { nul, control };
   if (typeof str !== "string") return wcwidth(str, opts);
 
-  var s = 0;
-  for (var i = 0; i < str.length; i++) {
-    var n = wcwidth(str.charCodeAt(i), opts);
+  let s = 0;
+  for (let i = 0; i < str.length; i++) {
+    const n = wcwidth(str.charCodeAt(i), opts);
     if (n < 0) return -1;
     s += n;
   }
@@ -75,9 +75,9 @@ function wcwidth(ucs: number, { nul = 0, control = 0 }: Defaults = {}): number {
 }
 
 function bisearch(ucs: number): boolean {
-  var min = 0;
-  var max = combining.length - 1;
-  var mid;
+  let min = 0;
+  let max = combining.length - 1;
+  let mid;
 
   if (ucs < combining[0][0] || ucs > combining[max][1]) return false;
 
