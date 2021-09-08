@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [0.1.3] - 2021-09-08
+
+### Bug Fixes
+
+- lint ([`48c1aeb`])
+- is_interactive ([`0c98197`])
+
 ## [0.1.2] - 2021-02-02
 
 ### Features
@@ -39,6 +46,9 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
+[0.1.3]: https://github.com/denosaurs/tty/compare/0.1.2...0.1.3
+[`48c1aeb`]: https://github.com/denosaurs/tty/commit/48c1aeb022917bab4c90ca7ef9d766a177c2bca1
+[`0c98197`]: https://github.com/denosaurs/tty/commit/0c98197d23785f454a9736e0db9fa8262fbdc1fa
 [0.1.2]: https://github.com/denosaurs/tty/compare/0.1.1...0.1.2
 [`aaa6ba2`]: https://github.com/denosaurs/tty/commit/aaa6ba2e6793c667c917e07fe67c4c325bcb40bc
 [0.1.1]: https://github.com/denosaurs/tty/compare/0.1.0...0.1.1
