@@ -1,5 +1,3 @@
-import { showCursorSync } from "./tty_sync.ts";
-
 const mac = (await Deno.permissions.query({ name: "env" })).state === "granted"
   ? Deno.env.get("TERM_PROGRAM") === "Apple_Terminal"
   : false;
