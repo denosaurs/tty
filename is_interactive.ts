@@ -1,4 +1,4 @@
-export async function isInteractive(stream: { rid: number }): Promise<boolean> {
+export async function isInteractiveAsync(stream: { rid: number }): Promise<boolean> {
   if (await Deno.permissions.query({ name: "env" })) {
     return (
       Deno.isatty(stream.rid) &&
@@ -6,5 +6,9 @@ export async function isInteractive(stream: { rid: number }): Promise<boolean> {
       !Deno.env.get("CI")
     );
   }
+  return Deno.isatty(stream.rid);
+}
+
+export function isInteractive(stream: { rid: number }): boolean {
   return Deno.isatty(stream.rid);
 }
