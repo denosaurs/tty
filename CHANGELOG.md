@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [0.1.4] - 2021-09-15
+
+### Bug Fixes
+
+- make isInteractive sync again! ([`65d1443`])
+
 ## [0.1.3] - 2021-09-08
 
 ### Bug Fixes
@@ -46,6 +52,8 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
+[0.1.4]: https://github.com/denosaurs/tty/compare/0.1.3...0.1.4
+[`65d1443`]: https://github.com/denosaurs/tty/commit/65d1443d9fe9cfc7dee185504cad602959ce868b
 [0.1.3]: https://github.com/denosaurs/tty/compare/0.1.2...0.1.3
 [`48c1aeb`]: https://github.com/denosaurs/tty/commit/48c1aeb022917bab4c90ca7ef9d766a177c2bca1
 [`0c98197`]: https://github.com/denosaurs/tty/commit/0c98197d23785f454a9736e0db9fa8262fbdc1fa
