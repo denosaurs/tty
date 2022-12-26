@@ -1,7 +1,7 @@
 # tty
 
 [![Tags](https://img.shields.io/github/release/denosaurs/tty)](https://github.com/denosaurs/tty/releases)
-[![CI Status](https://img.shields.io/github/workflow/status/denosaurs/tty/check)](https://github.com/denosaurs/tty/actions)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/denosaurs/tty/check.yml?branch=main)](https://github.com/denosaurs/tty/actions)
 [![License](https://img.shields.io/github/license/denosaurs/tty)](https://github.com/denosaurs/tty/blob/master/LICENSE)
 
 <p align="center">
