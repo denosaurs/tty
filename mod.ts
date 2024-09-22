@@ -1,6 +1,7 @@
-const mac = (await Deno.permissions.query({ name: "env" })).state === "granted"
-  ? Deno.env.get("TERM_PROGRAM") === "Apple_Terminal"
-  : false;
+const mac: boolean =
+  (await Deno.permissions.query({ name: "env" })).state === "granted"
+    ? Deno.env.get("TERM_PROGRAM") === "Apple_Terminal"
+    : false;
 
 export const ESC = "\u001B[";
 
@@ -31,8 +32,8 @@ export const PREV_LINE = "1F";
 export const COLUMN = "1G"; // left?
 export const HOME = "H";
 
-export type SyncStream = Deno.WriterSync;
-export type AsyncStream = Deno.Writer;
+export type SyncStream = Pick<typeof Deno.stdout, "writeSync">;
+export type AsyncStream = Pick<typeof Deno.stdout, "write">;
 
 export * from "./tty_async.ts";
 export * from "./tty_sync.ts";

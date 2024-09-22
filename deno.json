@@ -1,0 +1,10 @@
+{
+  "name": "@denosaurs/tty",
+  "version": "0.2.0",
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "tasks": {
+    "update": "deno run --allow-net --allow-write update.ts"
+  }
+}

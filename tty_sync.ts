@@ -20,7 +20,7 @@ import {
   SCROLL_DOWN,
   SCROLL_UP,
   SHOW,
-  SyncStream,
+  type SyncStream,
   UP,
 } from "./mod.ts";
 
