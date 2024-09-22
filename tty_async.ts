@@ -1,7 +1,7 @@
 import { encode } from "./util.ts";
 
 import {
-  AsyncStream,
+  type AsyncStream,
   CLEAR_DOWN,
   CLEAR_LEFT,
   CLEAR_LINE,
