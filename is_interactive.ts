@@ -1,5 +1,5 @@
 export async function isInteractiveAsync(
-  stream: { isTerminal(): boolean },
+  stream: Pick<typeof Deno.stdout, "isTerminal">,
 ): Promise<boolean> {
   if (await Deno.permissions.query({ name: "env" })) {
     return (
@@ -11,6 +11,8 @@ export async function isInteractiveAsync(
   return stream.isTerminal();
 }
 
-export function isInteractive(stream: { isTerminal(): boolean }): boolean {
+export function isInteractive(
+  stream: Pick<typeof Deno.stdout, "isTerminal">,
+): boolean {
   return stream.isTerminal();
 }

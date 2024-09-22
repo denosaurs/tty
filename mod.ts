@@ -32,8 +32,8 @@ export const PREV_LINE = "1F";
 export const COLUMN = "1G"; // left?
 export const HOME = "H";
 
-export type SyncStream = Pick<typeof Deno.stdout, "writeSync">;
-export type AsyncStream = Pick<typeof Deno.stdout, "write">;
+export type SyncStream = Pick<typeof Deno.stdout, "writeSync" | "isTerminal">;
+export type AsyncStream = Pick<typeof Deno.stdout, "write" | "isTerminal">;
 
 export * from "./tty_async.ts";
 export * from "./tty_sync.ts";
